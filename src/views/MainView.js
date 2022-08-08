@@ -1,12 +1,16 @@
-import { Link } from 'react-router-dom';
+import React from "react";
+import Header from "../components/Header";
+import Navigation from "../components/Navigation";
+import Partners from "../components/Partners";
 
-const AdminView = props => {
-	return (
-		<>
-			<h2>Main View</h2>
-			<Link to='/auth'>Auth View</Link>
-		</>
-	);
+const AdminView = (props) => {
+  return (
+    <>
+      <Navigation />
+      <Header />
+      <Partners />
+    </>
+  );
 };
 
 export default AdminView;
