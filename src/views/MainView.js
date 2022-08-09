@@ -7,13 +7,29 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import History from "../components/History";
 import Navigation from "../components/Navigation";
+import NewsLetter from "../components/NewsLetter";
 import Partners from "../components/Partners";
 import Services from "../components/Services";
 import Years from "../components/Years";
 
 const AdminView = (props) => {
+  const [show, setShow] = React.useState(false);
+
+  const handleNewsLetterModal = () => {
+    setShow(true);
+  };
+
+  const handleClose = () => setShow(false);
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      handleNewsLetterModal();
+    }, 3000);
+  }, []);
+
   return (
     <>
+      <NewsLetter show={show} handleClose={handleClose} />
       <Navigation />
       <Header />
       <Partners />
