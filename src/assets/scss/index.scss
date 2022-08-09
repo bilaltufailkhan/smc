@@ -2,11 +2,28 @@
 
 $primaryColor: #475cb7;
 $textLight: #ffffff;
+$secondaryColor: #a1332b;
 
 body {
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: $primaryColor;
+}
+
+span {
+  font-weight: 600;
+  color: $primaryColor;
+}
+
+.radio-form {
+  background: #efefef;
 }
 
 .nav-link {
@@ -15,6 +32,9 @@ body {
   font-weight: 600;
   margin-left: 1rem;
   color: $textLight;
+  &:hover {
+    color: $primaryColor;
+  }
 }
 
 .btn-subscribe {
@@ -43,20 +63,105 @@ body {
   }
 }
 
-.partners {
+.heading {
+  background: $primaryColor;
   h1 {
     text-transform: uppercase;
     color: $textLight;
   }
-  .heading {
-    background: $primaryColor;
-  }
+}
+
+.partners {
   .content {
     background: $textLight;
     img {
       width: auto;
       height: 50px;
     }
+  }
+}
+
+.hyper-reference {
+  border-bottom: #a0a0a0 2px solid;
+  width: 100%;
+  height: 70%;
+}
+
+.thick-border {
+  width: 100%;
+  height: 14px;
+  background: $secondaryColor;
+}
+
+.gallery {
+  display: "block";
+  min-height: "10px";
+  width: "100%";
+  overflow: "auto";
+  img {
+    width: auto;
+    max-height: 200px;
+  }
+}
+
+.about-bg {
+  background: url("../img/about.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+}
+
+.career-bg {
+  background: url("../img/career.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+}
+
+.contact-bg {
+  background: url("../img/contact.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+}
+
+.single-card {
+  img {
+    width: auto;
+    height: 250px;
+  }
+}
+
+.footer {
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.8);
+  h3 {
+    color: $textLight;
+  }
+  span {
+    color: $textLight;
+  }
+  i {
+    color: $textLight;
+    font-size: 1.3rem;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .social {
+    padding-left: 1rem;
   }
 }
 
@@ -67,5 +172,11 @@ body {
   .btn-subscribe {
     margin-left: 7px;
     margin-top: 10px;
+  }
+  .gallery {
+    img {
+      width: 100%;
+      max-height: 100%;
+    }
   }
 }

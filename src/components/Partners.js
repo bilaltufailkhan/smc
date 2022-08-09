@@ -7,16 +7,13 @@ import partner2 from "../assets/img/partner2.png";
 import partner3 from "../assets/img/partner3.png";
 import partner4 from "../assets/img/partner4.png";
 import partner5 from "../assets/img/partner5.png";
+import Heading from "./Heading";
 
-function Partners() {
+function Partners(props) {
   return (
     <>
       <Container fluid className="partners">
-        <Row className="heading py-3 text-center">
-          <Col xs={12}>
-            <h1>Our Partners</h1>
-          </Col>
-        </Row>
+        <Heading title="our partners" />
         <Row className="content justify-content-center py-5 text-center">
           <Col md={2}>
             <img src={partner1} />
