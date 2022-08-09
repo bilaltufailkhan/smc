@@ -37,7 +37,7 @@ function Footer() {
               </ul>
             </Col>
             <Col md="4" sm="12" className="social">
-              <h3>Social Media</h3>
+              <h4>Social Media</h4>
               <Row className="align-items-center">
                 <Col xs="1">
                   <Link to="/">
@@ -56,7 +56,7 @@ function Footer() {
                 </Col>
               </Row>
               <Row className="mt-4">
-                <h3>Call Us</h3>
+                <h4>Call Us</h4>
                 <span>443-326-4813</span>
               </Row>
             </Col>
