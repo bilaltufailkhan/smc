@@ -31,6 +31,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         className="btn btn-primary btn-block mt-3"
         type="submit"
         formValues={[email]}
+        onClick={handleSubmit}
       />
     </form>
   );
